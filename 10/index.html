@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>SAP UI5</title>
+        <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs="sap.m"
+                data-sap-ui-theme="sap_bluecrystal" >
+        </script>
+        <script>
+            var oInput = new sap.m.Input("enterInput",{
+                maxLength: 9
+            })
+            var oButton = new sap.m.Button("buttonClickMe",{
+                text : "Click Me",
+                press : function(){
+                    debugger;
+                    var input = oInput._sTypedInValue;
+                    alert("Hello! How are you? "+ input );
+                }
+            });
+            oInput.placeAt("pageContent");
+            oButton.placeAt("pageContent");
+        </script>
+    </head>
+    <body class="sapuiBody">
+        <h1>Welcome to the world of UI5</h1>
+        <div id="pageContent">
+        </div>
+    </body>
+</html>
