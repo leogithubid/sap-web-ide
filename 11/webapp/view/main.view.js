@@ -5,9 +5,7 @@ sap.ui.jsview("root.view.main",{
     createContent:function(oController){
         var oButton = new sap.m.Button("buttonClickMe",{
             text : "Click Me",
-            press : function(){
-                                alert("Hello! How are you?" );
-            }
+            press : oController.welcome
         });
         return oButton;
         }

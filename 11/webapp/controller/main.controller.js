@@ -3,6 +3,9 @@ sap.ui.define([
 ], 
 function(oMVCController) {
     return oMVCController.extend("root.controller.main",{
+        welcome:function(){
+            alert("Hello! How are you?" );
+}       
 
     });
 }); 
