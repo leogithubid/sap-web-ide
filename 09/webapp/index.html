@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <!-- 
+            boot strapping
+            sap.m library
+            theme
+        -->
+        <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs = "sap.m"
+                data-sap-ui-theme = "sap_bluecrystal">
+        </script>
+        <script>
+        /* 
+        var oControlName = new library.ControlName( "id" , {
+            property 1 : "value1",
+            property 2 : "value2"
+        }
+        ) ;
+        oControlName.placeAt("divId");
+        */
+            var oButton = new sap.m.Button("idButton",{
+                text : "Click me",
+                icon : "sap-icon://add-photo",
+                press : function (){
+                    alert ("Hello ! Welcome to UI5");
+                }
+            });
+            oButton.placeAt("content")
+        </script>
+    </head>
+    <!-- https://openui5.hana.ondemand.com/resources/sap/ui/core/themes/sap_belize/library.css -->
+    <body class="sapUiBody">
+        <h1>Welcome to UI5</h1>
+        <div id="content"></div>
+    </body>
+</html>
