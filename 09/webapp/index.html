@@ -18,19 +18,28 @@
         ) ;
         oControlName.placeAt("divId");
         */
+            var oInput = new sap.m.Input("idInput", {
+                placeholder:"Enter your name"
+            }
+            );
+            oInput.placeAt("Enter");
             var oButton = new sap.m.Button("idButton",{
                 text : "Click me",
                 icon : "sap-icon://add-photo",
                 press : function (){
-                    alert ("Hello ! Welcome to UI5");
+                //    alert ("Hello ! Welcome to UI5");
+                debugger;
+                var name = oInput.getValue();
+                alert( "Hello " + name + "! Welcome to UI5! ");
                 }
             });
-            oButton.placeAt("content")
+            oButton.placeAt("Button");
         </script>
     </head>
     <!-- https://openui5.hana.ondemand.com/resources/sap/ui/core/themes/sap_belize/library.css -->
     <body class="sapUiBody">
         <h1>Welcome to UI5</h1>
-        <div id="content"></div>
+        <div id="Enter"></div>
+        <div id="Button"></div>
     </body>
 </html>
