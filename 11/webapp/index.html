@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script src = "https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs="sap.m"
+                data-sap-ui-theme="sap_belize"
+                data-sap-ui-resourceroots='{
+                    "home" : "./"
+                }'>
+        </script>
+        <script>
+/*             var oButton = new sap.m.Button("idButton",{
+                text : "Click Me"
+            });
+            oButton.placeAt("pageContent"); */
+            var oView = new sap.ui.view("idView",{
+                viewName : "home.view.main",
+                type : "JS"
+            });
+            oView.placeAt("pageContent");
+        </script>
+    </head>
+    <body class=sapUiBody>
+        <h1>Welcome to UI5</h1>
+        <div id="pageContent"></div>
+    </body>
+</html>
