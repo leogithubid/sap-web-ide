@@ -22,8 +22,7 @@ sap.ui.define(
               var oButton = oCore.byId("idButton");
               //set Text
               oButton.setText("Controller speaking");
-              alert(userInput);
-            }
+              alert(userInput);            }
         }); //inherit the sap ui controll
     }
 );
