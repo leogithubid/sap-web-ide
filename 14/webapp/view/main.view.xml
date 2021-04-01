@@ -1,0 +1,18 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+          xmlns="sap.m"
+          xmlns:form="sap.ui.layout.form"
+          xmlns:core="sap.ui.core"
+          controllerName="home.controller.main">
+    <form:SimpleForm id="simpleForm" editable="true">
+        <Label id="labelUserName" text="User Name"></Label>
+        <Input id="inputUserName" placeholder="Enter User Name"></Input>
+        <Label id="labelPassword" text="Password"></Label>
+        <Input id="inputPassword" placeholder="Enter Password"></Input>
+        <Label></Label>
+        <Button id="buttonLogin" text="Login" press="onClick"></Button>
+        <!-- Note : This is title aggregation of Simple For -->
+        <form:title>
+            <core:Title text="Welcome to UI5"></core:Title>
+        </form:title>
+    </form:SimpleForm>
+</mvc:View>
