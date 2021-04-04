@@ -1,0 +1,21 @@
+<mvc:view xmlns:mvc="sap/ui/core/mvc"
+          xmlns="sap.m"
+          xmlns:form="sap/ui/layout/form"
+          xmlns:core="sap/ui/core"
+          xmlns:table="sap/ui/table"
+          controllerName="home/controller/main">
+          <form:SimpleForm editable="true">
+            <form:title>
+                <core:Title text="Employee Details"></core:Title>
+            </form:title>
+            <Label text="Employee Id"></Label>
+            <Input id="employeeId" placeholder="Employee Id" value="{/empStr/empId}"></Input>
+            <Label text="Employee Name"></Label>
+            <Input id="employeeName" placeholder="Employee Name" value="{path:'/empStr/empName'}"></Input>
+            <Label text="Salary"></Label>
+            <Input id="salary" placeholder="Salary" value ="{/empStr/salary}"
+            enabled = "{= ${/empStr/salary} > 1000000 ? false : true}"></Input>
+            <Label text="Currency"></Label>
+            <Input id="currency" placeholder="Currency" value="{/empStr/currency}"></Input>
+          </form:SimpleForm>
+</mvc:view>

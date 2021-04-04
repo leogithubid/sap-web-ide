@@ -1,0 +1,22 @@
+{
+	"empStr": {
+		"empId": 100,
+		"empName": "Alpha",
+		"salary": 10000,
+		"currency": "USD"
+	},
+	"empTab": [{
+			"empId": 200,
+			"empName": "Beta",
+			"salary": 20000,
+			"currency": "AUD"
+		},
+		{
+			"empId": 300,
+			"empName": "Gamma",
+			"salary": 30000,
+			"currency": "EUR"
+		}
+
+	]
+}
