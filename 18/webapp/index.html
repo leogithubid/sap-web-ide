@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Welcome to UI5</title>
+        <!-- First link the UI5 JS library
+             Then load sap.m as default library
+             Add CSS theme
+             Tell the app what's the alias for the root folder -->
+        <script src="http://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs="sap.m"
+                data-sap-ui-theme="sap_belize"
+                data-sap-ui-resourceroots='{
+                    "home" : "./"
+                }'></script>
+        <script>
+            //Then we create a XML view
+            //and tell where the view is placed
+            //place it in the div content
+            var oView = new sap.ui.core.mvc.XMLView("",{
+                viewName : "home.view.main",
+                type : "XML"
+            });
+            oView.placeAt("content");
+        </script>
+    </head>
+    <body class="sapUiBody">
+        <div id="content"></div>
+    </body>
+</html>
