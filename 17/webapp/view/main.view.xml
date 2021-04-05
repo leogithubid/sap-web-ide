@@ -1,0 +1,87 @@
+<mvc:XMLView xmlns:mvc="sap/ui/core/mvc"
+             xmlns="sap.m"
+             xmlns:core="sap.ui.core"
+             xmlns:table="sap.ui.table"
+             controllerName="home.controller.main">
+<!--     I have no idea how row aggregation is set like this? 
+    Table has a defaul aggregation called columns -->
+    <table:Table  rows="{/empTab}" visibleRowCount="5">
+            <table:title>
+                <Label text="Employee Details"></Label>
+            </table:title>
+            <table:toolbar>
+                <Toolbar>
+                    <Button text="Flip Employees" press="flipData">
+                    </Button>
+                </Toolbar>
+            </table:toolbar>
+            <table:columns>
+                <table:Column>
+                    <table:label>
+                        <Label text="Employee Id">
+                        </Label>
+                    </table:label>
+                    <table:template>
+                        <Text text="{empId}">
+                        </Text>
+                    </table:template>
+                </table:Column>
+                <table:Column>
+                    <table:label>
+                        <Label text="Employee Name">
+                        </Label>
+                    </table:label>
+                    <table:template>
+                        <Input value="{empName}">
+                        </Input>
+                    </table:template>
+                </table:Column>
+                <table:Column>
+                    <table:label>
+                        <Label text="Salary">
+                        </Label>
+                    </table:label>
+                    <table:template>
+                        <Input value="{salary} {currency}">
+                        </Input>
+                    </table:template>
+                </table:Column>
+                <table:Column>
+                    <table:label>
+                        <Label text="Smoker">
+                        </Label>
+                    </table:label>
+                    <table:template>
+                        <Input value="{smoker}">
+                        </Input>
+                    </table:template>
+                </table:Column>
+                <table:Column>
+                    <table:label>
+                        <Label text="Marital Status">
+                        </Label>
+                    </table:label>
+                    <table:template>
+                        <Select selectedKey="{maritalStatus}">
+                            <items>
+                                <core:Item key="m" text="married">
+                                </core:Item>
+                                <core:Item key="s" text="single">
+                                </core:Item>
+                            </items>
+                        </Select>
+                    </table:template>
+                </table:Column>
+                <table:Column>
+                    <table:label>
+                        <Label text="Rating">
+                        </Label>
+                    </table:label>
+                    <table:template>
+                        <RatingIndicator value="{rating}">
+                        </RatingIndicator>
+                    </table:template>
+                </table:Column>
+            </table:columns>
+    </table:Table>
+</mvc:XMLView>
