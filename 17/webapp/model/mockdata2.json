@@ -13,7 +13,7 @@
 			"empName": "Alex",
 			"salary": 10000,
 			"currency": "AUD",
-			"smoker": "true",
+			"smoker": true,
 			"maritalStatus": "single",
 			"rating": 1
 		},
@@ -22,7 +22,7 @@
 			"empName": "Beth",
 			"salary": 80000,
 			"currency": "USD",
-			"smoker": "true",
+			"smoker": true,
 			"maritalStatus": "married",
 			"rating": 3
 		},
@@ -31,7 +31,7 @@
 			"empName": "Gerry",
 			"salary": 30000,
 			"currency": "USD",
-			"smoker": "false",
+			"smoker": false,
 			"maritalStatus": "married",
 			"rating": 3
 		},
@@ -40,7 +40,7 @@
 			"empName": "Diana",
 			"salary": 40000,
 			"currency": "USD",
-			"smoker": "true",
+			"smoker": true,
 			"maritalStatus": "single",
 			"rating": 3
 		},
@@ -49,7 +49,7 @@
 			"empName": "Edmilson",
 			"salary": 50000,
 			"currency": "EUR",
-			"smoker": "true",
+			"smoker": true,
 			"maritalStatus": "single",
 			"rating": 5
 		},
@@ -58,7 +58,7 @@
 			"empName": "Zeba",
 			"salary": 10000,
 			"currency": "USD",
-			"smoker": "false",
+			"smoker": false,
 			"maritalStatus": "single",
 			"rating": 1
 		},
@@ -67,7 +67,7 @@
 			"empName": "Ethan",
 			"salary": 30000,
 			"currency": "INR",
-			"smoker": "false",
+			"smoker": false,
 			"maritalStatus": "single",
 			"rating": 3
 		},
@@ -76,7 +76,7 @@
 			"empName": "Thimothi",
 			"salary": 50000,
 			"currency": "EUR",
-			"smoker": "false",
+			"smoker": false,
 			"maritalStatus": "married",
 			"rating": 2
 		},
@@ -85,7 +85,7 @@
 			"empName": "Iris",
 			"salary": 90000,
 			"currency": "INR",
-			"smoker": "true",
+			"smoker": true,
 			"maritalStatus": "married",
 			"rating": 2
 		},
@@ -94,7 +94,7 @@
 			"empName": "Kaplan",
 			"salary": 40000,
 			"currency": "USD",
-			"smoker": "false",
+			"smoker": false,
 			"maritalStatus": "married",
 			"rating": 3
 		}

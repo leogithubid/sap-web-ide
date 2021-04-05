@@ -52,8 +52,8 @@
                         </Label>
                     </table:label>
                     <table:template>
-                        <Input value="{smoker}">
-                        </Input>
+                        <CheckBox selected="{smoker}">
+                        </CheckBox>
                     </table:template>
                 </table:Column>
                 <table:Column>

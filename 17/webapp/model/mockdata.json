@@ -13,7 +13,7 @@
 			"empName": "Alpha",
 			"salary": 10000,
 			"currency": "AUD",
-			"smoker": "true",
+			"smoker": true,
 			"maritalStatus": "s",
 			"rating": 1
 		},
@@ -22,7 +22,7 @@
 			"empName": "Beta",
 			"salary": 20000,
 			"currency": "EUR",
-			"smoker": "false",
+			"smoker": false,
 			"maritalStatus": "s",
 			"rating": 2
 		},
@@ -31,7 +31,7 @@
 			"empName": "Gamma",
 			"salary": 30000,
 			"currency": "USD",
-			"smoker": "false",
+			"smoker": false,
 			"maritalStatus": "m",
 			"rating": 3
 		},
@@ -40,7 +40,7 @@
 			"empName": "Delta",
 			"salary": 40000,
 			"currency": "INR",
-			"smoker": "true",
+			"smoker": true,
 			"maritalStatus": "s",
 			"rating": 4
 		},
@@ -49,7 +49,7 @@
 			"empName": "Epsilon",
 			"salary": 50000,
 			"currency": "EUR",
-			"smoker": "true",
+			"smoker": true,
 			"maritalStatus": "s",
 			"rating": 5
 		},
@@ -58,7 +58,7 @@
 			"empName": "Zeta",
 			"salary": 60000,
 			"currency": "USD",
-			"smoker": "true",
+			"smoker": true,
 			"maritalStatus": "m",
 			"rating": 1
 		},
@@ -67,7 +67,7 @@
 			"empName": "Eta",
 			"salary": 70000,
 			"currency": "AUD",
-			"smoker": "false",
+			"smoker": false,
 			"maritalStatus": "s",
 			"rating": 3
 		},
@@ -76,7 +76,7 @@
 			"empName": "Theta",
 			"salary": 80000,
 			"currency": "EUR",
-			"smoker": "true",
+			"smoker": true,
 			"maritalStatus": "s",
 			"rating": 5
 		},
@@ -85,7 +85,7 @@
 			"empName": "Iota",
 			"salary": 90000,
 			"currency": "INR",
-			"smoker": "true",
+			"smoker": true,
 			"maritalStatus": "m",
 			"rating": 2
 		},
@@ -94,7 +94,7 @@
 			"empName": "Kappa",
 			"salary": 100000,
 			"currency": "USD",
-			"smoker": "true",
+			"smoker": true,
 			"maritalStatus": "s",
 			"rating": 4
 		}

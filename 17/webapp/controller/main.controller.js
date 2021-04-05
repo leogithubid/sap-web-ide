@@ -1,20 +1,14 @@
 sap.ui.define(
-    ["sap/ui/core/mvc/Controller"],function(oController){
+    ["sap/ui/core/mvc/Controller","home/model/model"],function(oController,modelJS){
         return oController.extend("home.main.controller",{
             onInit:function(){
-                var oModel = new sap.ui.model.json.JSONModel();
-                console.log(oModel);
-                oModel.loadData("model/mockdata.json");
-                console.log(oModel);
-                sap.ui.getCore().setModel(oModel);
-                console.log(oModel);
+                var oModelOne = modelJS.createModel("model/mockdata.json");
+                sap.ui.getCore().setModel(oModelOne);
+                var oModelTwo = modelJS.createModel("model/mockdata2.json");
+                sap.ui.getCore().setModel(oModelTwo,"modelTwo");
             },
             flipData:function(){
-                var oModel = new sap.ui.model.json.JSONModel();
-                console.log(oModel);
-                oModel.loadData("model/mockdata2.json");
-                console.log(oModel);
-                sap.ui.getCore().setModel(oModel);
+                var oModel = sap.ui.getCore().getModel();
                 console.log(oModel);
             }
         });
