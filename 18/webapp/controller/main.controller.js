@@ -19,6 +19,10 @@ sap.ui.define(
                 //by the way I can create and set another model. 
                 //This is called named-model. The model created above is the default model 
                 //as we didn't give it any id
+
+                /*Resource Model */
+                var oModelResource = modelJS.createResourceModel("i18n/i18n.properties");
+                sap.ui.getCore().setModel(oModelResource,"i18n");
             },
             //Flip flop function
             flipFlop:function(){

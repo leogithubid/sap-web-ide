@@ -3,9 +3,11 @@ sap.ui.define(
     ["sap/ui/model/json/JSONModel",
     //that returns a JSON reference
     //load XML dependency
-    "sap/ui/model/xml/XMLModel"
+    "sap/ui/model/xml/XMLModel",
+    //load resource model
+    "sap/ui/model/resource/ResourceModel"
 ],
-    function(JSONModel,XMLModel){
+    function(JSONModel,XMLModel,ResourceModel){
         //return 
         return {
             //a function to create JSON model from the path
@@ -23,6 +25,13 @@ sap.ui.define(
                 var oModel = new XMLModel();
                 //load data from the file path
                 oModel.loadData(filePath);
+                return oModel;
+            },
+            //return Resource Model
+            createResourceModel:function(filePath){
+                var oModel = new ResourceModel({
+                    bundleUrl : filePath
+                });
                 return oModel;
             }
         }

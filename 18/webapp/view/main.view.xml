@@ -2,7 +2,8 @@
      Load the name spaces for the various controls that are getting created
      Set default name space as sap.m
      Then create controls and do property and aggregation binding
-     Before that we have to link it to the controller and get models created there-->
+     Before that we have to link it to the controller and get models created there
+     Look up in OPENUI5 SDK for "Annotations in Translation Files"-->
 <mvc:XMLView xmlns:mvc="sap.ui.core.mvc"
              xmlns:form="sap.ui.layout.form"
              xmlns:core="sap.ui.core"
@@ -10,18 +11,18 @@
              xmlns="sap.m"
              controllerName="home.controller.main">
              <form:SimpleForm editable="true">
-                <Label text="Employee Id"></Label>
+                <Label text="{i18n>XLBL_EMPID}"></Label>
                 <Input value="{/empStr/empId}"></Input>
-                <Label text="Employee Name"></Label>
+                <Label text="{i18n>XLBL_EMPNAME}"></Label>
                 <Input value="{/empStr/empName}"></Input>
-                <Label text="Salary"></Label>
+                <Label text="{i18n>XLBL_SALARY}"></Label>
                 <Input value="{/empStr/salary}"></Input>
-                <Label text="Currency"></Label>
+                <Label text="{i18n>XLBL_CURRENCY}"></Label>
                 <Input value="{/empStr/currency}"></Input>
-                <Label text="Rating"></Label>
+                <Label text="{i18n>XLBL_RATING}"></Label>
                 <Input value="{/empStr/rating}"></Input>
              </form:SimpleForm>
-             <Button text="Flip Flop" press="flipFlop"></Button>
+             <Button text="{i18n>XBUT_FLIPFLOP}" press="flipFlop"></Button>
              <!-- Let us bind the table ! 
              We first set rows aggreaation to empTab
              and then we give each Column one by one within the columns aggregation
@@ -34,7 +35,7 @@
                 <!-- Employee Id -->
                   <table:Column>
                      <table:label>
-                        <Label text="Employee Id">
+                        <Label text="{i18n>XLBL_EMPID}">
                         </Label>
                      </table:label>
                      <table:template>
@@ -45,7 +46,7 @@
                    <!-- Employee Name -->
                   <table:Column>
                      <table:label>
-                        <Label text="Employee Name">
+                        <Label text="{i18n>XLBL_EMPNAME}">
                         </Label>
                      </table:label>
                      <table:template>
@@ -56,7 +57,7 @@
                    <!-- Salary -->
                   <table:Column>
                      <table:label>
-                        <Label text="Salary">
+                        <Label text="{i18n>XLBL_SALARY}">
                         </Label>
                      </table:label>
                      <table:template>
@@ -68,7 +69,7 @@
                   We are using Checkbox with true and false-->
                      <table:Column>
                      <table:label>
-                        <Label text="Smoker">
+                        <Label text="{i18n>XLBL_SALARY}">
                         </Label>
                      </table:label>
                      <table:template>
@@ -80,7 +81,7 @@
                   For this we are using Select with key and text-->
                      <table:Column>
                      <table:label>
-                        <Label text="Marital Status">
+                        <Label text="{i18n>XLBL_MARITALSTATUS}">
                         </Label>
                      </table:label>
                      <table:template>
@@ -98,7 +99,7 @@
                   For this we use Rating Indicator-->
                      <table:Column>
                      <table:label>
-                        <Label text="Rating">
+                        <Label text="{i18n>XLBL_RATING}">
                         </Label>
                      </table:label>
                      <table:template>
