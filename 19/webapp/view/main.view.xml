@@ -4,7 +4,10 @@
           xmlns:form="sap.ui.layout.form"
           xmlns:table="sap.ui.table"
           controllerName="home.controller.main">
-        <table:Table rows="{/empTab}" visibleRowCount="4">
+        <table:Table rows="{/empTab}" 
+                     visibleRowCount="4" 
+                     rowSelectionChange="getDetails"
+                      selectionMode="Single" >
             <table:title>
                 <Title text="{i18n>XTIT_TABLE}"></Title>
             </table:title>
@@ -64,22 +67,22 @@
                 </table:Column>
             </table:columns>
         </table:Table>
-        <form:SimpleForm editable="true">
+        <form:SimpleForm id="empForm" editable="true">
             <form:title>
                 <core:Title text="{i18n>XTIT_FORM}">
                 </core:Title>
             </form:title>
             <Label text="{i18n>XLBL_EMPID}"></Label>
-            <Input value=""></Input>
+            <Input value="{empId}"></Input>
             <Label text="{i18n>XLBL_EMPNAME}"></Label>
-            <Input value=""></Input>
+            <Input value="{empName}"></Input>
              <Label text="{i18n>XLBL_SALARY}"></Label>
-            <Input value=""></Input>
+            <Input value="{salary}"></Input>
             <Label text="{i18n>XLBL_SMOKER}"></Label>
-            <Input value=""></Input>
+            <Input value="{smoker}"></Input>
             <Label text="{i18n>XLBL_MARITALSTATUS}"></Label>
-            <Input value=""></Input>
+            <Input value="{maritalStatus}"></Input>
             <Label text="{i18n>XLBL_RATING}"></Label>
-            <Input value=""></Input>
+            <Input value="{rating}"></Input>
         </form:SimpleForm>
 </mvc:XMLView>

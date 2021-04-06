@@ -9,6 +9,14 @@ sap.ui.define(
                 var oResourceModel = ModelJS.createResourceModel("i18n/i18n.properties");
                 sap.ui.getCore().setModel(oResourceModel,"i18n"); 
                 sap.ui.getCore().setModel(oJSONModel);
+            },
+            getDetails:function(oEvent){
+                var sPath = oEvent.getParameter("rowContext").getPath();
+                console.log(sPath);
+                //Element Binding ie, bind the Form Info to the path
+                var empForm = this.getView().byId("empForm");
+                console.log(empForm);
+                empForm.bindElement(sPath);
             }
         });
     }
