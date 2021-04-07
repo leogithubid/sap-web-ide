@@ -27,7 +27,7 @@
                     <table:template>
                     <!-- formatter function -->
                         <Input value="{path : 'empName' ,
-                                       formatter : '.convertUpperCase' }"></Input>
+                                       formatter : '.formatter.convertUpperCase' }"></Input>
                     </table:template>
                 </table:Column>
                 <table:Column >
@@ -37,7 +37,7 @@
                     <table:template>
                         <Input value="{
                             parts : [ {path : 'salary'} , { path : 'currency'} ],
-                            formatter : '.formatSalary'
+                            formatter : '.formatter.formatSalary'
                         }"></Input>
                     </table:template>
                 </table:Column>

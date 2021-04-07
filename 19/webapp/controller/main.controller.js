@@ -1,8 +1,11 @@
 sap.ui.define(
     ["sap/ui/core/mvc/Controller",
       "home/model/model",
-      "sap/ui/core/format/NumberFormat"
-    ],function(Controller,ModelJS,NumberFormat){
+//      "sap/ui/core/format/NumberFormat",
+      "home/util/utility"
+    ],function(Controller,ModelJS,
+//        NumberFormat,
+        UtilityJS){
         return Controller.extend("home.main.controller",{
             onInit:function(){
 
@@ -19,7 +22,9 @@ sap.ui.define(
                 console.log(empForm);
                 empForm.bindElement(sPath);
             },
-            //formatter currency
+            formatter:UtilityJS,
+/*             //formatter currency
+            This code is moved to Util-Utility.JS
             formatSalary:function(salary,currency ){
                 var oCurrencyFormat = NumberFormat.getCurrencyInstance();
                 console.log(oCurrencyFormat);
@@ -32,7 +37,7 @@ sap.ui.define(
                 if(inputValue){
                     return inputValue.toUpperCase();
                 }
-            }
+            } */
         });
     }
 );
