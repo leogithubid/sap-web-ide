@@ -10,10 +10,9 @@ sap.ui.define(
             },
             //create view here
             createContent:function(){
-                var oButton = new sap.m.Button("buttonHello", {
-                    text : "Hello"
+                return new sap.m.Button("buttonHello", {
+                    text : "Hello Short"
                 });
-                return oButton;
             },
             destroy:{}
         });
