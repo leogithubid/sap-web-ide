@@ -10,9 +10,11 @@ sap.ui.define(
             },
             //create view here
             createContent:function(){
-                return new sap.m.Button("buttonHello", {
-                    text : "Hello Short"
+                var oView = new sap.ui.core.mvc.XMLView("",{
+                    viewName : "sap.ui.demo.view.App",
+                    type     : "XML"
                 });
+                oView.placeAt("content");
             },
             destroy:{}
         });
