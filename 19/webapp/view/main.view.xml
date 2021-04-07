@@ -25,7 +25,9 @@
                         <Label text="{i18n>XLBL_EMPNAME}"></Label>
                     </table:label>
                     <table:template>
-                        <Input value="{empName}"></Input>
+                    <!-- formatter function -->
+                        <Input value="{path : 'empName' ,
+                                       formatter : '.convertUpperCase' }"></Input>
                     </table:template>
                 </table:Column>
                 <table:Column >
@@ -33,7 +35,10 @@
                         <Label text="{i18n>XLBL_SALARY}"></Label>
                     </table:label>
                     <table:template>
-                        <Input value="{salary} {currency}"></Input>
+                        <Input value="{
+                            parts : [ {path : 'salary'} , { path : 'currency'} ],
+                            formatter : '.formatSalary'
+                        }"></Input>
                     </table:template>
                 </table:Column>
                 <table:Column >
