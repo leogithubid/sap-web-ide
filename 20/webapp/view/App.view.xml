@@ -1,4 +1,6 @@
 <mvc:View xmlns:mvc="sap/ui/core/mvc"
           xmlns="sap.m">
-          <Button text="Hello from App view"></Button>
+          <Label text="Hello from App view"></Label>
+          <App id="idApp">
+          </App>
 </mvc:View>

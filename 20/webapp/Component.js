@@ -14,7 +14,12 @@ sap.ui.define(
                     viewName : "sap.ui.demo.view.App",
                     type     : "XML"
                 });
-                oView.placeAt("content");
+                var mainView = new sap.ui.core.mvc.XMLView("",{
+                    viewName : "sap.ui.demo.view.main",
+                    type     : "XML"
+                });
+                oView.byId("idApp").addPage(mainView);
+                return oView;
             },
             destroy:{}
         });
