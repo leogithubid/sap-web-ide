@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>22-List Control</title>
+        <script src="http://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs="sap.m"
+                data-sap-ui-theme="sap_belize"
+                data-sap-ui-resourceroots='{
+                    "sap.ui.demo" : "./"
+                }'
+        >
+        </script>
+        <script>
+            //component container
+            var oComponent = new sap.ui.core.ComponentContainer("",{
+                name : "sap.ui.demo" //give the root path as this is not inside any folder
+            });
+            //the componetn.js will return the view so place this at the div
+            oComponent.placeAt("content");
+        </script>
+    </head>
+    <body class="sapUiBody">
+        <h1>Welcome to UI5</h1>
+        <div id="content"></div>
+    </body>
+</html>
