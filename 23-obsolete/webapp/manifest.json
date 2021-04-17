@@ -25,10 +25,6 @@
           "async": true,
           "id": "app"
       },
-      "contentDensities": {
-          "compact": true,
-          "cozy": false
-      },
       "dependencies": {
         "minUI5Version": "1.60",
         "libs": {
@@ -36,12 +32,6 @@
         }
       },
       "models": {
-        "": {
-            "type": "sap.ui.model.json.JSONModel",
-            "settings": {},
-            "uri": "model/mockData/fruits.json",
-            "preload": false
-        },
         "i18n": {
           "type": "sap.ui.model.resource.ResourceModel",
           "settings": {

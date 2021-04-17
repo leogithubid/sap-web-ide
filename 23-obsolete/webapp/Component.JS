@@ -1,10 +1,10 @@
 sap.ui.define(
     ["sap/ui/core/UIComponent"],function(UIComponent){
         return UIComponent.extend("sap.ui.demo.Component",{
-            metadata:{
+            metadata : {
                 manifest : "json"
             },
-            onInit:function(){
+            init:function(){
                 UIComponent.prototype.init.apply(this);
             },
             createContent:function(){
@@ -16,10 +16,12 @@ sap.ui.define(
                     viewName : "sap.ui.demo.view.viewOne",
                     type : "XML"
                 });
-                var appContainer = appView.byId("appId");
-                appContainer.addPage(viewOne);
+/*                 var viewTwo = new sap.ui.core.mvc.XMLView("viewTwo",{
+                    viewName : "sap.ui.demo.view.viewTwo",
+                    type : "XML"
+                }); */
+                appView.byId("appId").addPage(viewOne);
                 return appView;
-            },
-            //search Event Handler in view controller
+            }
         });
-});
+    });
