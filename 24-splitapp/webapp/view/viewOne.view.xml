@@ -1,0 +1,10 @@
+<mvc:XMLView xmlns:mvc="sap.ui.core.mvc" 
+             xmlns="sap.m"
+             controllerName="sap.ui.demo.controller.viewOne">
+    <Page id="pageOne">
+    <List items="{/fruits}"  itemPress="onItemPress" >
+        <ObjectListItem title="{name}" icon="{image}" number="{price}" type="Active" >          
+        </ObjectListItem>
+    </List>
+    </Page>
+</mvc:XMLView>

@@ -19,8 +19,10 @@ sap.ui.define(["sap/ui/core/UIComponent"],function(UIComponent){
                 viewName : "sap.ui.demo.view.viewTwo",
                 type     : "XML"
             });
-            var appId = appView.byId("appId");
-            appId.addPage(viewOne).addPage(viewTwo);
+            var splitApp = appView.byId("splitApp");
+            splitApp.addMasterPage(viewOne);
+            splitApp.addDetailPage(viewTwo);
+            return appView;
         }
     });
 });
