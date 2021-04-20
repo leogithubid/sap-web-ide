@@ -1,8 +1,8 @@
 <mvc:XMLView xmlns:mvc="sap.ui.core.mvc" 
              xmlns="sap.m"
              controllerName="sap.ui.demo.controller.viewOne">
-    <Page id="pageOne">
-    <List id="list"
+    <Page>
+    <List
           items="{/fruits}"  
           itemPress="onItemPress" >
         <ObjectListItem title="{name}" 

@@ -8,9 +8,12 @@ sap.ui.define(
             //instantiate base class
             init:function(){
                 UIComponent.prototype.init.apply(this);
+                var oRouter = this.getRouter();
+                console.log(oRouter);
+                oRouter.initialize();
             },
-            createContent:function(){
-                //create views
+/*            createContent:function(){
+                 //create views
                 var appView = new sap.ui.core.mvc.XMLView("appView",{
                     viewName : "sap.ui.demo.view.App",
                     type : "XML"
@@ -29,8 +32,8 @@ sap.ui.define(
                 // add Master page and Detail Page
                 splitApp.addMasterPage(viewOne);
                 splitApp.addDetailPage(viewTwo);
-                return appView;
-            }
+                return appView; 
+            }*/
         });
     }
 );

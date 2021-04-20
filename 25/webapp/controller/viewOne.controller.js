@@ -2,8 +2,13 @@ sap .ui.define([
     "sap/ui/core/mvc/Controller"
     ], function(Controller) {
         return Controller.extend("sap.ui.demo.controller.viewOne",{
+            //initialisation method to get the Router
+            init:function(){
+
+            },
             //this method was crreated to move to next page
             onNext:function(selectedPath){
+                debugger;
                 //get View container - view One
                 console.log(this.getView());
                 //split App Master page
@@ -23,14 +28,20 @@ sap .ui.define([
                 oView2.getContent()[0].getContent()[0].bindElement(selectedPath);
             },
             onItemPress:function(oEvent){
-                //get event
+                debugger;
+/*                 //get event
                 console.log(oEvent);
                 //get the item selected
                 console.log(oEvent.getParameter("listItem"));
                 //get its pathh
                 console.log(oEvent.getParameter("listItem").getBindingContextPath());
                 //call the above method
-                this.onNext(oEvent.getParameter("listItem").getBindingContextPath());
+                this.onNext(oEvent.getParameter("listItem").getBindingContextPath()); */
+                //use the Router object from init to navigate to next view using route
+                console.log(this.getOwnerComponent());
+                console.log(this.getOwnerComponent().getRouter());
+                var oRouter = this.getOwnerComponent().getRouter();
+                oRouter.navTo("detail");
             }
         });
         
