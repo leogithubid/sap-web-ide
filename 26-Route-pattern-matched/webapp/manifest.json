@@ -26,36 +26,35 @@
 		},
 		"routing": {
 			"config": {
-				"routerClass": "sap.m.routing.Router",
-				"viewType": "XML",
-				"viewPath": "sap.ui.demo.view",
-        		"controlId": "splitApp",
-				"async": true
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "viewPath": "sap.ui.demo.view",
+                "controlId": "splitApp"
 			},
       "routes": [
         {
-          "name" : "master",
-          "pattern" : "",
-          "target" : ["home","blank"]
+            "name": "master",
+            "pattern": "",
+            "target": ["home","blank"]
         },
         {
-          "name" : "detail",
-          "pattern": "detail",
-          "target" : ["home","detail"]
+            "name": "details",
+            "pattern": "fruit/{fruitId}",
+            "target": ["home","fruits"]
         }
       ],
       "targets": {
         "home" : {
-          "viewName": "viewOne",
-          "controlAggregation": "masterPages"
+            "viewName": "viewOne",
+            "controlAggregation": "masterPages"
         },
         "blank" : {
-          "viewName": "blank",
-          "controlAggregation": "detailPages"
+            "viewName": "blank",
+            "controlAggregation": "detailPages"
         },
-        "detail":{
-          "viewName": "viewTwo",
-          "controlAggregation": "detailPages"
+        "fruits" : {
+            "viewName": "viewTwo",
+            "controlAggregation": "detailPages"
         }
       }
     },

@@ -1,0 +1,11 @@
+<mvc:XMLView xmlns:mvc="sap.ui.core.mvc"
+             xmlns="sap.m"
+             controllerName="sap.ui.demo.controller.viewTwo">
+    <Page title="Details Page"> 
+        <ObjectHeader   
+                      title="{name}"  
+                      number="{price}"  
+                      icon="{image}"   >
+        </ObjectHeader>
+    </Page>              
+</mvc:XMLView>
