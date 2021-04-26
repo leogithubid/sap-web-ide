@@ -1,0 +1,16 @@
+<mvc:XMLView xmlns:mvc="sap.ui.core.mvc" 
+             xmlns="sap.m"
+             controllerName="sap.ui.demo.controller.viewTwo">
+    <Page title="Details Pages">
+        <ObjectHeader 
+            icon="{image}"
+            number="{price}"
+            title="{name}">
+            <ObjectAttribute title="Carbohydrates" text="{nutritions/carbohydrates}"></ObjectAttribute>
+            <ObjectAttribute title="Protein" text="{nutritions/protein}"></ObjectAttribute>
+            <ObjectAttribute title="Fat" text="{nutritions/fat}"></ObjectAttribute>
+            <ObjectAttribute title="Sugar" text="{nutritions/sugar}"></ObjectAttribute>
+            <ObjectAttribute title="Calories" text="{nutritions/calories}"></ObjectAttribute>
+        </ObjectHeader>
+    </Page>    
+</mvc:XMLView>
