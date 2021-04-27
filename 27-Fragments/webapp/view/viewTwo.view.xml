@@ -1,16 +1,38 @@
-<mvc:XMLView xmlns:mvc="sap.ui.core.mvc" 
+<mvc:XMLView xmlns:core="sap.ui.core" 
+             xmlns:mvc="sap.ui.core.mvc" 
              xmlns="sap.m"
+             xmlns:form="sap.ui.layout.form"
              controllerName="sap.ui.demo.controller.viewTwo">
     <Page title="Details Pages">
         <ObjectHeader 
             icon="{image}"
             number="{price}"
             title="{name}">
-            <ObjectAttribute title="Carbohydrates" text="{nutritions/carbohydrates}"></ObjectAttribute>
-            <ObjectAttribute title="Protein" text="{nutritions/protein}"></ObjectAttribute>
-            <ObjectAttribute title="Fat" text="{nutritions/fat}"></ObjectAttribute>
-            <ObjectAttribute title="Sugar" text="{nutritions/sugar}"></ObjectAttribute>
-            <ObjectAttribute title="Calories" text="{nutritions/calories}"></ObjectAttribute>
+            <ObjectAttribute title="Genus" text="{genus}"></ObjectAttribute>
+            <ObjectAttribute title="Family" text="{family}"></ObjectAttribute>
+            <ObjectAttribute title="Order" text="{order}"></ObjectAttribute>
         </ObjectHeader>
+        <IconTabBar >
+            <items>
+                <IconTabFilter icon="sap-icon://information">
+                    <form:SimpleForm >
+                        <Label text="Carbohydrates" ></Label>
+                        <Text text="{nutritions/carbohydrates}"></Text>
+                        <Label text="Protein" ></Label>
+                        <Text text="{nutritions/protein}"></Text>
+                        <Label text="Fat" ></Label>
+                        <Text text="{nutritions/fat}"></Text>
+                        <Label text="Sugar" ></Label>
+                        <Text text="{nutritions/sugar}"></Text>
+                        <Label text="Calories" ></Label>
+                        <Text text="{nutritions/calories}"></Text>
+                    </form:SimpleForm>
+                </IconTabFilter>
+                <IconTabFilter icon="sap-icon://supplier">
+                </IconTabFilter>
+                <IconTabFilter icon="sap-icon://world">
+                </IconTabFilter>
+            </items>
+        </IconTabBar>
     </Page>    
 </mvc:XMLView>
