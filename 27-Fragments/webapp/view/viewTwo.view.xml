@@ -15,22 +15,14 @@
         <IconTabBar >
             <items>
                 <IconTabFilter icon="sap-icon://information">
-                    <form:SimpleForm >
-                        <Label text="Carbohydrates" ></Label>
-                        <Text text="{nutritions/carbohydrates}"></Text>
-                        <Label text="Protein" ></Label>
-                        <Text text="{nutritions/protein}"></Text>
-                        <Label text="Fat" ></Label>
-                        <Text text="{nutritions/fat}"></Text>
-                        <Label text="Sugar" ></Label>
-                        <Text text="{nutritions/sugar}"></Text>
-                        <Label text="Calories" ></Label>
-                        <Text text="{nutritions/calories}"></Text>
-                    </form:SimpleForm>
+                    <core:Fragment fragmentName="sap.ui.demo.fragments.nutrition" type="XML" >
+                    </core:Fragment>    
                 </IconTabFilter>
                 <IconTabFilter icon="sap-icon://supplier">
                 </IconTabFilter>
                 <IconTabFilter icon="sap-icon://world">
+                    <core:Fragment fragmentName="sap.ui.demo.fragments.cities" type="XML">
+                    </core:Fragment>    
                 </IconTabFilter>
             </items>
         </IconTabBar>
