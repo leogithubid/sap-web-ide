@@ -6,14 +6,14 @@
 <!--     I have no idea how row aggregation is set like this? 
     Table has a defaul aggregation called columns -->
     <table:Table  rows="{/empTab}" visibleRowCount="5">
-            <table:title>
-                <Label text="Employee Details"></Label>
-            </table:title>
-            <table:toolbar>
                 <Toolbar>
                     <Button text="Flip Employees" press="flipData">
                     </Button>
                 </Toolbar>
+            <table:title>
+                <Label text="Employee Details"></Label>
+            </table:title>
+            <table:toolbar>
             </table:toolbar>
             <table:columns>
                 <table:Column>
