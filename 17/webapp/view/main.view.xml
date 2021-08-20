@@ -5,11 +5,11 @@
              controllerName="home.controller.main">
 <!--     I have no idea how row aggregation is set like this? 
     Table has a defaul aggregation called columns -->
-    <table:Table  rows="{/empTab}" visibleRowCount="5">
-                <Toolbar>
+    <table:Table  rows="{/empTab}">
+<!--                 <Toolbar>
                     <Button text="Flip Employees" press="flipData">
                     </Button>
-                </Toolbar>
+                </Toolbar> -->
             <table:title>
                 <Label text="Employee Details"></Label>
             </table:title>
