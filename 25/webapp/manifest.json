@@ -41,7 +41,7 @@
         {
           "name" : "detail",
           "pattern": "detail",
-          "target" : ["home","detail"]
+          "target" : ["detail","blank"]
         }
       ],
       "targets": {
